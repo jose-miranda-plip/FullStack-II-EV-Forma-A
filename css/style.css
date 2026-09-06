@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+    --color-fondo: #F7F7F7;
+    --color-verde: #2E8B57;
+    --color-amarillo: #FFD700;
+    --color-marron: #8B4513;
+    --color-texto: #333333;
+    --color-texto-secundario: #666666;
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-verde);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--color-texto);
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: var(--color-verde);
+}
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: var(--color-marron);
+}
+
+.hero p {
+    margin: 20px 0;
+    color: var(--color-texto-secundario);
+}
+
+.btn {
+    padding: 12px 24px;
+    background-color: var(--color-verde);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}

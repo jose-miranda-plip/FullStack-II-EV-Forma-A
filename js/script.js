@@ -78,6 +78,28 @@ function agregarAlCarrito(codigoProducto) {
     }
 
     localStorage.setItem("carrito", JSON.stringify(carrito));
+    actualizarContadorCarrito();
 
     alert(`Se ha agregado ${productoSeleccionado.nombre} al carrito.`);
 }
+
+function actualizarContadorCarrito() {
+
+    const contador = document.querySelector("#contador-carrito");
+
+    if (!contador) {
+        return;
+    }
+
+    const carrito =
+        JSON.parse(localStorage.getItem("carrito")) || [];
+
+    const cantidadTotal = carrito.reduce(
+        (total, item) => total + item.cantidad,
+        0
+    );
+
+    contador.textContent = cantidadTotal;
+}
+
+actualizarContadorCarrito();

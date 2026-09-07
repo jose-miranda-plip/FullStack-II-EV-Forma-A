@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
 
 :root {
-    --color-fondo: #0cb7f2;
+    --color-fondo: #96eafc;
     --color-verde: #2E8B57;
     --color-amarillo: #FFD700;
     --color-marron: #8B4513;
@@ -32,7 +32,7 @@ h1, h2, h3 {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: white;
+    background-color: #72d5f8;
 }
 
 .logo {

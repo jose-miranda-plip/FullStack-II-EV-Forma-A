@@ -7,6 +7,48 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">
+                <h1>HuertoHogar</h1>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="carrito-pagina">
+
+        <h1>Mi carrito</h1>
+        <div id="contenedor-carrito">
+            // parte de javascript
+        </div>
+        
+        <section class="resumen-carrito">
+
+            <h2>Resumen de Compra</h2>
+
+            <p>
+                Total:
+                <Strong id="total-carrito">
+                    $0
+                </Strong>
+            </p>
+
+            <button class="btn">
+                Confirmar compra
+            </button>
+        </section>
+    </main>
+
+    <script src="../data/productos.js"></script>  
+    <script src="../js/script.js"></script>
 </body>
 </html>

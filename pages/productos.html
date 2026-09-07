@@ -6,6 +6,7 @@
     <title>Productos | HuertoHogar</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -35,10 +36,30 @@
                 Explora nuestra variedad de productos frescos y naturales para tu hogar.
             </p>
 
-        </section>
+            <div class="filtros">
 
+                <button class="btn-filtro" data-categoria="todos">Todos</button>
+
+                <button class="btn-filtro" data-categoria="Frutas Frescas">Frutas</button>
+
+                <button class="btn-filtro" data-categoria="Verduras Orgánicas">Verduras</button>
+
+                <button class="btn-filtro" data-categoria="Productos Orgánicos">Orgánicos</button>
+
+                <button class="btn-filtro" data-categoria="Productos Lácteos">Lacteos</button>
+
+            </div>
+
+            <div id="contenedor-productos" class="productos">
+
+                // parte de javascript
+            </div>
+
+        </section>
+ 
     </main>
 
+    <script src="../data/productos.js"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>

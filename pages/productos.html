@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | HuertoHogar</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+
+            <a href="../index.html" class="logo">
+                <h1>HuertoHogar</h1>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="carrito.html">Carrito (<span id="contador-carrito">0</span>)</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="catalogo">
+
+            <h1>Catálogo de Productos</h1>
+
+            <p>
+                Explora nuestra variedad de productos frescos y naturales para tu hogar.
+            </p>
+
+            <div class="filtros">
+
+                <button class="btn-filtro" data-categoria="todos">Todos</button>
+
+                <button class="btn-filtro" data-categoria="Frutas Frescas">Frutas</button>
+
+                <button class="btn-filtro" data-categoria="Verduras Orgánicas">Verduras</button>
+
+                <button class="btn-filtro" data-categoria="Productos Orgánicos">Orgánicos</button>
+
+                <button class="btn-filtro" data-categoria="Productos Lácteos">Lacteos</button>
+
+            </div>
+
+            <div id="contenedor-productos" class="productos">
+
+                // parte de javascript
+            </div>
+
+        </section>
+ 
+    </main>
+
+    <script src="../data/productos.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

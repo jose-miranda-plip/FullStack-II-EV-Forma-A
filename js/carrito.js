@@ -88,7 +88,7 @@ function aumentarCantidad(codigoProducto) {
 
     const producto = productos.find(producto => producto.codigo === codigoProducto);
 
-    if (iten.cantidad < producto.stock) {
+    if (item.cantidad < producto.stock) {
         item.cantidad++;
         guardarCarrito();
         mostrarCarrito();
